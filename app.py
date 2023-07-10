@@ -38,7 +38,6 @@ def search():
             result = {
                 "channel": vid_info['channel'] if 'channel' in vid_info else "",
                 "title": vid_info['title'],
-                "upload_date": datetime.strptime(vid_info['upload_date'], "%Y%m%d").strftime("%Y-%m-%d"),
                 "thumbnail": vid_info['thumbnail'],
                 "video_url": video_url,
                 "like_count": vid_info['like_count'] if 'like_count' in vid_info else 0,
